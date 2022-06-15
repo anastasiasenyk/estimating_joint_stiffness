@@ -4,7 +4,6 @@ import sys
 
 path_arm26 = 'Arm26/arm26.osim'
 path_inverse_kinematics_mot = 'Arm26/OutputReference/InverseKinematics/arm26_InverseKinematics.mot'
-path_inverse_kinematics_mot = '/Users/anastasiaa/Applications/OpenSim 4.3/OpenSim 4.3.app/Contents/Resources/opensim/sdk/Python/project2022/Arm26/OutputReference/InverseKinematics/arm26_InverseKinematics.mot'
 path_write_results = 'results/armmodel_1_0.osim'
 path_dir_write_results = 'results'
 path_inverse_dyn_setup = 'Arm26/OutputReference/ForwardDynamics/arm26_Setup_Forward.xml'
