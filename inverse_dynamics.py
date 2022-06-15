@@ -3,16 +3,17 @@ import numpy as np
 import sys
 
 path_arm26 = 'Arm26/arm26.osim'
-path_inverse_kinematics_mot1 = 'Arm26/OutputReference/InverseKinematics/arm26_InverseKinematics.mot'
-path_inverse_kinematics_mot2 = 'results/arm26_InverseKinematics.mot'
+path_inverse_kinematics_mot = 'Arm26/OutputReference/InverseKinematics/arm26_InverseKinematics.mot'
+path_inverse_kinematics_mot = '/Users/anastasiaa/Applications/OpenSim 4.3/OpenSim 4.3.app/Contents/Resources/opensim/sdk/Python/project2022/Arm26/OutputReference/InverseKinematics/arm26_InverseKinematics.mot'
 path_write_results = 'results/armmodel_1_0.osim'
+path_dir_write_results = 'results'
 path_inverse_dyn_setup = 'Arm26/OutputReference/ForwardDynamics/arm26_Setup_Forward.xml'
 
 
 class ARM26:
     def __init__(self, path):
         self.model = osim.Model(path)
-        self.inverse_d = osim.InverseDynamicsTool()
+        self.inverse_d = None
         if not running_as_test:
             self.model.setUseVisualizer(True)
 
@@ -23,18 +24,19 @@ class ARM26:
         """
         print('____________________________________')
 
-        # initialisation for osim.InverseDynamicsTool()
+        "initialisation for osim.InverseDynamicsTool()"
+        self.inverse_d = osim.InverseDynamicsTool(path_arm26, True)
         self.inverse_d.setName('InverseDynMod')
-        self.inverse_d.setModelFileName(path_arm26)
+        # self.inverse_d.setModelFileName(path_arm26)
         self.inverse_d.setModel(self.model)
-        self.inverse_d.setOutputGenForceFileName(path)
         self.inverse_d.setStartTime(0.0)
         self.inverse_d.setEndTime(1.0)
-        self.inverse_d.setResultsDir('results')
-        self.inverse_d.setReferences(path_inverse_dyn_setup)
-        self.inverse_d.setCoordinatesFileName(path)
+        self.inverse_d.setResultsDir('../results/')
+        self.inverse_d.setOutputGenForceFileName('inverse_dynamics.sto')
+        # self.inverse_d.setReferences(path_inverse_dyn_setup)
+        # self.inverse_d.setCoordinatesFileName(path)
 
-        # write data from file to osim.Storage()
+        "write data from file to osim.Storage()"
         sto = osim.Storage()
         motion_array = self.read_file(11, path)
         for item in motion_array:
@@ -42,10 +44,15 @@ class ARM26:
             row.appendVector(osim.Vector([float(item[1]), float(item[2])]))
             sto.append(float(item[0]), row)
 
-        sto.printToXML('results/new_storage.xml')  # save storage
+            # new_array = osim.Storage()
+            # new_array.append(float(item[0]), row)
+            # self.inverse_d.setCoordinateValues(new_array)
 
-        # place the storage into osim.InverseDynamicsTool()
-        self.inverse_d.setCoordinateValues(sto)
+        sto.printToXML('results/new_storage.xml')  # save storage
+        self.inverse_d.setCoordinateValues(sto)   # place the storage into osim.InverseDynamicsTool()
+        # self.inverse_d.setCoordinatesFileName('results/new_storage.xml')
+        self.inverse_d.setCoordinatesFileName(path)
+        self.inverse_d.run()  # run inverse dynamics (file.sto will be created and visualisation (should) starts)
 
     def read_file(self, num_invalid_lines, file_name):
         """return data from file"""
@@ -60,7 +67,6 @@ class ARM26:
 
     def run(self):
         """Simulate"""
-        self.inverse_d.run()  # run inverse dynamics (well, nothing happen)
         state = self.model.initSystem()
         self.model.equilibrateMuscles(state)
         manager = osim.Manager(self.model)
@@ -76,7 +82,6 @@ class ARM26:
 if __name__ == '__main__':
     running_as_test = 'unittest' in str().join(sys.argv)
     model = ARM26(path_arm26)
-    model.inverse_dynamics(path_inverse_kinematics_mot2)
-    model.run()
-
-    model.save_to_file(path_write_results)
+    model.inverse_dynamics(path_inverse_kinematics_mot)
+    # model.run()
+    # model.save_to_file(path_write_results)
