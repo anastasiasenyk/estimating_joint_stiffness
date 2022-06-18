@@ -50,6 +50,9 @@ class ARM26:
         self.inverse_d.setCoordinatesFileName(path)
         self.inverse_d.run()  # run inverse dynamics (file.sto will be created and visualisation starts)
 
+    def computed_muscle_control(self):
+        return
+
     def read_file(self, num_invalid_lines, file_name):
         """return data from file"""
         with open(file_name, 'r') as f:
@@ -64,11 +67,11 @@ class ARM26:
     def run(self):
         """Simulate"""
         state = self.model.initSystem()
-        self.model.equilibrateMuscles(state)
-        manager = osim.Manager(self.model)
-        state.setTime(0)
-        manager.initialize(state)
-        manager.integrate(1.0)
+        # self.model.equilibrateMuscles(state)
+        # manager = osim.Manager(self.model)
+        # state.setTime(0)
+        # manager.initialize(state)
+        # manager.integrate(1.0)
 
     def save_to_file(self, path):
         """Print/save model file"""
@@ -80,4 +83,7 @@ if __name__ == '__main__':
     model = ARM26(path_arm26_osim)
     model.inverse_dynamics(path_inverse_kinematics_mot)
     # model.run()
-    # model.save_to_file(path_write_results)
+    # model.save_to_file(path_dir_results)
+
+
+
