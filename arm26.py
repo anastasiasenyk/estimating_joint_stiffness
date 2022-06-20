@@ -1,3 +1,9 @@
+"""
+inverse dynamics
+computed muscle controls
+forward dynamics
+"""
+
 import opensim as osim
 
 
@@ -23,6 +29,14 @@ class ARM26:
 
         cmc.run()
 
+    def forward_dynamics(self, path):
+        forward_d = osim.ForwardTool()
+        forward_d.setControlsFileName(path)
+        forward_d.setModel(self.model)
+        forward_d.setResultsDir('./results')
+
+        forward_d.run()
+
 
 if __name__ == '__main__':
     model = ARM26('./Arm26/arm26.osim')
@@ -30,3 +44,6 @@ if __name__ == '__main__':
     path_inverse_kinematics_mot = './Arm26/OutputReference/InverseKinematics/arm26_InverseKinematics.mot'
     model.inverse_dynamics(path_inverse_kinematics_mot)
     model.computed_muscle_control(path_inverse_kinematics_mot)
+
+    path_modified_controls_xml = './Arm26/OutputReference/ForwardDynamics/arm26_Modified_controls.xml'
+    model.forward_dynamics(path_modified_controls_xml)
