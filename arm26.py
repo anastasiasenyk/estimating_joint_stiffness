@@ -3,14 +3,13 @@ inverse dynamics
 computed muscle controls
 forward dynamics
 """
-
 import opensim as osim
 
 
 class ARM26:
     def __init__(self, path):
         self.model = osim.Model(path)
-        self.model.initSystem()
+        self.state = self.model.initSystem()
 
     def inverse_dynamics(self, path):
         inverse_d = osim.InverseDynamicsTool()
@@ -22,7 +21,7 @@ class ARM26:
 
     def computed_muscle_control(self, path):
         cmc = osim.CMCTool()
-        cmc.setTaskSetFileName('./Arm26/ComputedMuscleControl/arm26_ComputedMuscleControl_Tasks.xml')
+        cmc.setTaskSetFileName('..//Arm26/ComputedMuscleControl/arm26_ComputedMuscleControl_Tasks.xml')
         cmc.setDesiredKinematicsFileName(path)
         cmc.setModel(self.model)
         cmc.setResultsDir('./results')
@@ -37,13 +36,22 @@ class ARM26:
 
         forward_d.run()
 
+    def run(self):
+        self.model.equilibrateMuscles(self.state)
+        manager = osim.Manager(self.model)
+        self.state.setTime(0)
+        manager.initialize(self.state)
+        manager.integrate(1.0)
+
 
 if __name__ == '__main__':
-    model = ARM26('./Arm26/arm26.osim')
+    print('-')
+    model = ARM26('Geometry/full_arm_model_osv5.osim')
+    print('-')
 
-    path_inverse_kinematics_mot = './Arm26/OutputReference/InverseKinematics/arm26_InverseKinematics.mot'
+    path_inverse_kinematics_mot = 'data/euler.mot'
     model.inverse_dynamics(path_inverse_kinematics_mot)
     model.computed_muscle_control(path_inverse_kinematics_mot)
-
-    path_modified_controls_xml = './Arm26/OutputReference/ForwardDynamics/arm26_Modified_controls.xml'
-    model.forward_dynamics(path_modified_controls_xml)
+    #
+    # path_modified_controls_xml = './Arm26/OutputReference/ForwardDynamics/arm26_Modified_controls.xml'
+    # model.forward_dynamics(path_modified_controls_xml)
