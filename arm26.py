@@ -21,7 +21,7 @@ class ARM26:
 
     def computed_muscle_control(self, path):
         cmc = osim.CMCTool()
-        cmc.setTaskSetFileName('..//Arm26/ComputedMuscleControl/arm26_ComputedMuscleControl_Tasks.xml')
+        # cmc.setTaskSetFileName('arm26_ComputedMuscleControl_Tasks.xml')
         cmc.setDesiredKinematicsFileName(path)
         cmc.setModel(self.model)
         cmc.setResultsDir('./results')
@@ -49,9 +49,14 @@ if __name__ == '__main__':
     model = ARM26('Geometry/full_arm_model_osv5.osim')
     print('-')
 
-    path_inverse_kinematics_mot = 'data/euler.mot'
-    model.inverse_dynamics(path_inverse_kinematics_mot)
-    model.computed_muscle_control(path_inverse_kinematics_mot)
-    #
+    # model.inverse_dynamics('data/euler.mot')
+    # i had degree -> moments ->
+    # i had mot -(id)-> sto -(cmc)-> xml
+    # model.computed_muscle_control('results/inverse_dynamics.sto')
+
+    model.forward_dynamics('data/emg.sto')
+
+
+
     # path_modified_controls_xml = './Arm26/OutputReference/ForwardDynamics/arm26_Modified_controls.xml'
     # model.forward_dynamics(path_modified_controls_xml)

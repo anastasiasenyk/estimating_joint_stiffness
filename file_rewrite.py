@@ -1,5 +1,4 @@
 import pandas as pd
-import csv
 
 
 def rewrite(from_file, format):
