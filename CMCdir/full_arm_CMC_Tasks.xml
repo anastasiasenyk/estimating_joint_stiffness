@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSimDocument Version="20302">
+    <CMC_TaskSet name="arm_02_2021">
+    <objects>
+
+		<CMC_Joint name="thorax_rot1"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> thorax_rot1 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="thorax_rot2"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> thorax_rot2 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="thorax_rot3"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> thorax_rot3 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="sternoclavicular_r2"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> sternoclavicular_r2 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="sternoclavicular_r3"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> sternoclavicular_r3 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="unrotscap_r3"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> unrotscap_r3 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="unrotscap_r2"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> unrotscap_r2 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="acromioclavicular_r2"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> acromioclavicular_r2 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="acromioclavicular_r3"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> acromioclavicular_r3 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="acromioclavicular_r1"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> acromioclavicular_r1 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="unrothum_r1"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> unrothum_r1 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="unrothum_r3"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> unrothum_r3 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="unrothum_r2"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> unrothum_r2 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="elv_angle"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> elv_angle </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="shoulder_ab_ad"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> shoulder_ab_ad </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="shoulder1_r2"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> shoulder1_r2 </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="shoulder_ext_int"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> shoulder_ext_int </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_sh_ad_ab"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_sh_ad_ab </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_sh_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_sh_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_sh_ext_int"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_sh_ext_int </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="elbow_flexion"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> elbow_flexion </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_el_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_el_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_wr_s_p"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_wr_s_p </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_wr_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_wr_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_wr_ad_ab"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_wr_ad_ab </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_cmc1_ad_ab"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_cmc1_ad_ab </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_cmc1_f_e"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_cmc1_f_e </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp1_f_e"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp1_f_e </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_ip1_f_e"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_ip1_f_e </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp2_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp2_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp2_ab_ad"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false true false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp2_ab_ad </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_pip2_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_pip2_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_dip2_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_dip2_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp3_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp3_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp3_ab_ad"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp3_ab_ad </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_pip3_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_pip3_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_dip3_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_dip3_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp4_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp4_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp4_ab_ad"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp4_ab_ad </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_pip4_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_pip4_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_dip4_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_dip4_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp5_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp5_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_mcp5_ab_ad"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> false false †rue </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_mcp5_ab_ad </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_pip5_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_pip5_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+		<CMC_Joint name="ra_dip5_e_f"> 
+				<on> true </on>
+				<weight>       1.00000000    </weight>
+			    <active> true false false </active>
+				<kp>     100.00000000    </kp>
+				<kv>      20.00000000      </kv>
+				<ka>       1.00000000    </ka>
+			    <coordinate> ra_dip5_e_f </coordinate>
+				<limit>       0.00000000 </limit>
+		</CMC_Joint>
+    </objects>
+		<groups/>
+	</CMC_TaskSet>
+</OpenSimDocument>
