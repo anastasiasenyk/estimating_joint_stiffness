@@ -50,11 +50,10 @@ if __name__ == '__main__':
     print('-')
 
     # model.inverse_dynamics('data/euler.mot')
-    # i had degree -> moments ->
-    # i had mot -(id)-> sto -(cmc)-> xml
-    model.computed_muscle_control('results/inverse_dynamics.sto')
+
+    moments_file = 'results/inverse_dynamics.sto'
+    motion_file = 'data/euler.mot'
+
+    model.computed_muscle_control(motion_file)
 
     # model.forward_dynamics('data/emg.sto')
-
-    # path_modified_controls_xml = './Arm26/OutputReference/ForwardDynamics/arm26_Modified_controls.xml'
-    # model.forward_dynamics(path_modified_controls_xml)
