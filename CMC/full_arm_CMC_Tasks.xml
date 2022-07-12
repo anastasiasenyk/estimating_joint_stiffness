@@ -306,7 +306,7 @@
 		<CMC_Joint name="ra_mcp2_ab_ad"> 
 				<on> true </on>
 				<weight>       1.00000000    </weight>
-			    <active> false true false </active>
+			    <active> false false †rue </active>
 				<kp>     100.00000000    </kp>
 				<kv>      20.00000000      </kv>
 				<ka>       1.00000000    </ka>

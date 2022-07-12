@@ -9,7 +9,7 @@ def create_xml_file(file_path):
 """
     for joint in file:
         lines = joint.split('\n')
-        for index, coordinate in enumerate(lines[2:]):
+        for index, coordinate in enumerate(lines[1:]):
             if coordinate == '/':
                 continue
             if index == 0:
