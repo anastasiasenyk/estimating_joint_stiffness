@@ -8,7 +8,7 @@ Units are S.I. units (second, meters, Newtons, ...)
 Angles are in radian.
 
 endheader
-time	phys_coord_rot	phys_coord_ab_ad	phys_coord_fl_ex	ra_el_e_f	ra_wr_e_f	ra_wr_s_p	ra_wr_ad_ab
+time	phys_coord_fl_ex	phys_coord_ab_ad	phys_coord_rot	ra_el_e_f	ra_wr_e_f	ra_wr_s_p	ra_wr_ad_ab
       0.00000000	      0.16151934	      0.04603314	     -0.09658944	      0.23651521	      0.23651521	     -0.05290931	      0.32682534
       0.00204082	      0.16178236	      0.04603394	     -0.09670549	      0.23635928	      0.23635928	     -0.05289385	      0.32621820
       0.00408163	      0.16192708	      0.04609297	     -0.09684842	      0.23643232	      0.23643232	     -0.05284486	      0.32689883
