@@ -46,7 +46,7 @@ class ARM26:
 
 if __name__ == '__main__':
     print('-')
-    model = ARM26('Geometry/full_arm_model_osv5.osim')
+    model = ARM26('full_arm_model_osv5.osim')
     print('-')
 
     # model.inverse_dynamics('data/euler.mot')

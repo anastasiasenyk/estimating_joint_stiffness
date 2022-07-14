@@ -2,10 +2,10 @@ Coordinates
 version=1
 nRows=1018
 nColumns=8
-inDegrees=yes
+inDegrees=no
 
 Units are S.I. units (second, meters, Newtons, ...)
-Angles are in degrees.
+Angles are in radian.
 
 endheader
 time	Shoulder_Right1	Shoulder_Right2	Shoulder_Right3	Elbow_Right1	Wrist_Right1	Wrist_Right2	Wrist_Right3

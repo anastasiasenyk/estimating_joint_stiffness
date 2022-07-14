@@ -2,7 +2,7 @@ Coordinates
 version=1
 nRows=4234
 nColumns=13
-inDegrees=yes
+inDegrees=no
 endheader
 time	Pectoralis	AntDelt	PostDelt	TeresMaj	TriLong	TriShort	BicepLong	BicepShort	Brachiorad	FlexCarpiRad	FlexCarpiUln	ExtCarpiRad
       0.00000000	      0.00888561	      0.00080051	      0.00006989	      0.00105817	     -0.00026587	     -0.00112638	     -0.00321143	     -0.00107982	      0.00749259	      0.00255334	      0.00140038	      0.00239200
