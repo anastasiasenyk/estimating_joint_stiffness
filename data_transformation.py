@@ -26,15 +26,18 @@ def euler_rotate(path):
     tr_data = np.append(tr_data, tr_wrist_data, 1)
     tr_data = pd.DataFrame(tr_data)
 
-    # save the dataframe as a csv file
+    # column names
     tr_data.columns = ['ra_sh_e_f', 'ra_sh_ad_ab', 'ra_sh_ext_int',
                'ra_el_e_f', 'ra_wr_e_f', 'ra_wr_s_p', 'ra_wr_ad_ab']
 
+    # create a new file name
     if len(path.split('/')) != 1:
         path = path.split('/')
         new_file = '/'.join(path[:-1] + ['tr_'+ path[-1]])
     else:
         new_file = 'tr_' + path
+
+    # save the dataframe as a csv file
     tr_data.to_csv(new_file, index=False)
 
 
@@ -55,11 +58,17 @@ def file_format_change(name_file, format):
                        'Angles are in radians.\n\n')
         file.write('endheader\n')
 
-        # col names
+        # column names
         columns = ['time']
         for col in df.columns:
             columns.append(col)
-        file.write('\t'.join(columns))
+
+        # write a line with column names
+        if format == 'mot':
+            file.write('\t'.join(['time', 'ra_sh_e_f', 'ra_sh_ad_ab', 'ra_sh_ext_int',
+                                  'ra_el_e_f', 'ra_wr_e_f', 'ra_wr_s_p', 'ra_wr_ad_ab']))
+        else:
+            file.write('\t'.join(columns))
         file.write('\n')
 
         # body
@@ -81,7 +90,7 @@ def file_format_change(name_file, format):
             file.write('\n')
 
 
-if '__name__' == 'main':
-    euler_rotate('./data_csv/euler.csv')
-    file_format_change('./data_csv/tr_euler.csv', 'mot')
-
+formats = ['mot', 'sto']
+# euler_rotate('./data_csv/euler.csv')
+# file_format_change('./data_csv/tr_euler.csv', formats[0])
+file_format_change('./data_csv/euler.csv', formats[0])
