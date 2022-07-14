@@ -1,5 +1,5 @@
-def create_xml_file(file_path):
-    with open('coordinates_name.txt', 'r') as file:
+def create_xml_file(data, path):
+    with open(data, 'r') as file:
         file = file.read().split('\n\n')
 
         cmc_task_xml = """<?xml version="1.0" encoding="UTF-8"?>
@@ -29,8 +29,10 @@ def create_xml_file(file_path):
 	</ForceSet>
 </OpenSimDocument>
 """
-    with open(file_path, 'w') as f:
+    with open(path, 'w') as f:
         f.write(cmc_task_xml)
 
 
-create_xml_file('full_arm_Reserve_Actuators.xml')
+# create_xml_file('full_arm_Reserve_Actuators.xml')
+create_xml_file('subluxation_coordinate_name.txt', '../Subluxation/subluxation_arm_Reserve_Actuators.xml')
+

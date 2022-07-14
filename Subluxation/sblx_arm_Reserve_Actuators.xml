@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSimDocument Version="20302">
+	<ForceSet name="arm_02_2021">
+		<defaults/>
+		<objects>
+
+		    <CoordinateActuator name="thorax_rot2_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> thorax_rot2 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="thorax_rot3_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> thorax_rot3 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="sternoclavicular_r3_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> sternoclavicular_r3 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="unrotscap_r2_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> unrotscap_r2 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="acromioclavicular_r3_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> acromioclavicular_r3 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="acromioclavicular_r1_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> acromioclavicular_r1 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="unrothum_r3_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> unrothum_r3 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="unrothum_r2_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> unrothum_r2 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="shoulder1_r2_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> shoulder1_r2 </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="phys_coord_rot_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> phys_coord_rot </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="phys_coord_fl_ex_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> phys_coord_fl_ex </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_el_e_f_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_el_e_f </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_wr_ad_ab_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_wr_ad_ab </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_cmc1_f_e_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_cmc1_f_e </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_mcp1_f_e_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_mcp1_f_e </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_ip1_f_e_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_ip1_f_e </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_mcp2_ab_ad_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_mcp2_ab_ad </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_mcp3_ab_ad_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_mcp3_ab_ad </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_mcp4_ab_ad_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_mcp4_ab_ad </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+		    <CoordinateActuator name="ra_mcp5_ab_ad_reserve">
+				<isDisabled> false </isDisabled>
+				<min_control> -infinity </min_control>
+				<max_control> infinity </max_control>
+				<coordinate> ra_mcp5_ab_ad </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+
+    </objects>
+		<groups/>
+	</ForceSet>
+</OpenSimDocument>

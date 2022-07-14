@@ -1,0 +1,134 @@
+name	ground_thorax
+thorax_rot1
+thorax_rot2
+thorax_rot3
+
+name	sternoclavicular
+sternoclavicular_r2
+sternoclavicular_r3
+/
+
+name	unrotscap
+unrotscap_r3
+unrotscap_r2
+/
+
+name	acromioclavicular
+acromioclavicular_r2
+acromioclavicular_r3
+acromioclavicular_r1
+
+name	unrothum
+unrothum_r1
+unrothum_r3
+unrothum_r2
+
+name	shoulder0
+elv_angle
+/
+/
+
+name	shoulder1
+shoulder_elv
+shoulder1_r2
+/
+
+name	shoulder2
+shoulder_rot
+/
+/
+
+name	phys_joint
+phys_coord_ab_ad
+phys_coord_rot
+phys_coord_fl_ex
+
+name	RA1H_RA2U
+elbow_flexion
+/
+ra_el_e_f
+
+name	RA2U_RA2R
+ra_wr_s_p
+/
+/
+
+name	RA2R_RA3M
+ra_wr_e_f
+/
+ra_wr_ad_ab
+
+name	RA3M_RA4P1
+ra_cmc1_ad_ab
+/
+ra_cmc1_f_e
+
+name	RA4P1_RA5C1
+/
+/
+ra_mcp1_f_e
+
+name	RA5C1_RA6D1
+/
+/
+ra_ip1_f_e
+
+name	RA3M_RA4P2
+ra_mcp2_e_f
+/
+ra_mcp2_ab_ad
+
+name	RA4P2_RA5C2
+ra_pip2_e_f
+/
+/
+
+name	RA5C2_RA6D2
+ra_dip2_e_f
+/
+/
+
+name	RA3M_RA4P3
+ra_mcp3_e_f
+/
+ra_mcp3_ab_ad
+
+name	RA4P3_RA5C3
+ra_pip3_e_f
+/
+/
+
+name	RA5C3_RA6D3
+ra_dip3_e_f
+/
+/
+
+name	RA3M_RA4P4
+ra_mcp4_e_f
+/
+ra_mcp4_ab_ad
+
+name	RA4P4_RA5C4
+ra_pip4_e_f
+/
+/
+
+name	RA5C4_RA6D4
+ra_dip4_e_f
+/
+/
+
+name	RA3M_RA4P5
+ra_mcp5_e_f
+/
+ra_mcp5_ab_ad
+
+name	RA4P5_RA5C5
+ra_pip5_e_f
+/
+/
+
+name	RA5C5_RA6D5
+ra_dip5_e_f
+/
+/
