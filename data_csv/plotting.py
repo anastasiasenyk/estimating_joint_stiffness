@@ -23,13 +23,13 @@ def file_plot(name_file, format):
     if format == "mot":
 
         plt.legend(['elbow_flexion'])
-        plt.savefig('euler_mot.png')
+        plt.savefig('pictures/euler_mot.png')
 
     else:
 
         plt.legend(['TriLong',
                     'BicepLong'])
-        plt.savefig('emg_sto.png')
+        plt.savefig('pictures/emg_sto.png')
 
     plt.show()
 
@@ -61,12 +61,12 @@ def sto_plot(name_file, format):
         if format == 'mot':
             plt.plot(time, elbow_flex)
             plt.legend(['elbow_flexion_reserve'])
-            plt.savefig('elbow_flexion_sto.png')
+            plt.savefig('pictures/elbow_flexion_sto.png')
         else:
             plt.plot(time, muscles)
             plt.legend(['TRIlat',
                         'BIClong'])
-            plt.savefig('muscles_sto.png')
+            plt.savefig('pictures/muscles_sto.png')
         plt.show()
 
 
